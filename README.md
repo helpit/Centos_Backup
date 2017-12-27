@@ -27,7 +27,8 @@ Documentation
 	    mkdir /Scripts
 	    cd /Scripts
 	    git clone https://github.com/helpit/Centos_Backup.git
-
+		cd /Scripts/Centos_Backup
+		chmod +x backup.sh
 	or copy the files manually to your prefered directory.
 
 2. Create setting.cfg from the included settings.cfg.example.
@@ -71,7 +72,7 @@ for example:
 
 add inside:
 
-	    0 0 * * * /Scripts/Centos-Backup-Script/backup.sh
+	    0 3 * * * /Scripts/Centos_Backup/backup.sh
 
 by [David].
 [David]: http://www.helpit.cn
