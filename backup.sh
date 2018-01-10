@@ -166,7 +166,7 @@ SCRIPTDIRECTORY=$(cd `dirname $0` && pwd)
 cd $SCRIPTDIRECTORY
 if [ -f settings.cfg ] ; then
     echo "Loading settings..."
-    source settings.cfg
+    source $SCRIPTDIRECTORY/settings.cfg
 else
     echo "ERROR: Create settings.cfg (from settings.cfg.example)"
     exit
